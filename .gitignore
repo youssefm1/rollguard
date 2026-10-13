@@ -1,0 +1,4 @@
+/rollguard
+/out/
+*.jsonl
+.DS_Store
