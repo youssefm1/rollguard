@@ -1,0 +1,9 @@
+{
+  "name": "frontend-proxy",
+  "values": {
+    "upstream_timeout_ms": 1000,
+    "retries": 1,
+    "cache_mb": 2048,
+    "log_level": "warn"
+  }
+}
