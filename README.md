@@ -81,7 +81,7 @@ make graphs                                                   # regenerate docs/
 
 ## The simulator
 
-There's no real fleet here. `internal/sim` is 200 cells across 4 regions at 1k rps each, and each cell's behaviour comes from its config through a small model of a service calling an upstream:
+`internal/sim` is 200 cells across 4 regions at 1k rps each, and each cell's behaviour comes from its config through a small model of a service calling an upstream:
 
 - upstream latency is lognormal (median ~40ms, p99 ~130ms)
 - an attempt fails if the upstream is slower than `upstream_timeout_ms`; a request fails if all `1 + retries` attempts fail
